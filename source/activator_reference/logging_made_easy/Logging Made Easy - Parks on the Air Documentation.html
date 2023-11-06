@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://docs.pota.app/docs/activator_reference/logging_made_easy.html -->
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Logging Made Easy - Parks on the Air Documentation</title>
+    <link rel="shortcut icon" href="https://docs.pota.app/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Logging Made Easy - Parks on the Air Documentation_files/just-the-docs-default.css">
+    <script type="text/javascript"
+        src="./Logging Made Easy - Parks on the Air Documentation_files/lunr.min.js"></script>
+    <script type="text/javascript"
+        src="./Logging Made Easy - Parks on the Air Documentation_files/just-the-docs.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>Logging Made Easy | Parks on the Air Documentation</title>
+    <meta name="generator" content="Jekyll v4.2.2">
+    <meta property="og:title" content="Logging Made Easy">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Parks on the Air Documentation">
+    <meta property="og:description" content="Parks on the Air Documentation">
+    <link rel="canonical" href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html">
+    <meta property="og:url" content="https://docs.pota.app/docs/activator_reference/logging_made_easy.html">
+    <meta property="og:site_name" content="Parks on the Air Documentation">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="Logging Made Easy">
+    <script
+        type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","dateModified":"2023-05-03T14:26:12+00:00","description":"Parks on the Air Documentation","headline":"Logging Made Easy","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://docs.pota.app/assets/images/docs-pota-logo.png"}},"url":"https://docs.pota.app/docs/activator_reference/logging_made_easy.html"}</script>
+    <!-- End Jekyll SEO tag -->
+</head>
+
+<body> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="svg-link" viewBox="0 0 24 24">
+            <title>Link</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-link">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+        </symbol>
+        <symbol id="svg-search" viewBox="0 0 24 24">
+            <title>Search</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </symbol>
+        <symbol id="svg-menu" viewBox="0 0 24 24">
+            <title>Menu</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </symbol>
+        <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+            <title>Expand</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </symbol>
+        <symbol id="svg-doc" viewBox="0 0 24 24">
+            <title>Document</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-file">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+            </svg>
+        </symbol>
+    </svg>
+    <div class="side-bar">
+        <div class="site-header"> <a href="https://docs.pota.app/" class="site-title lh-tight">
+                <div class="site-logo"></div>
+            </a> <a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#" id="menu-button"
+                class="site-button"> <svg viewBox="0 0 24 24" class="icon">
+                    <use xlink:href="#svg-menu"></use>
+                </svg> </a> </div>
+        <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="https://docs.pota.app/" class="nav-list-link">Home</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/rules.html"
+                        class="nav-list-link">Rules</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/code_of_conduct.html"
+                        class="nav-list-link">Code of Conduct</a></li>
+                <li class="nav-list-item active"><a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#"
+                        class="nav-list-expander"><svg viewBox="0 0 24 24">
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg></a><a href="https://docs.pota.app/docs/activator.html" class="nav-list-link">Activator
+                        Reference</a>
+                    <ul class="nav-list ">
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/submitting_logs.html"
+                                class="nav-list-link">Submitting Logs</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/activator_guide-english.html"
+                                class="nav-list-link">Activator Guide</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/activation_styles.html"
+                                class="nav-list-link">Station Footprint Styles</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/activator_guide_clubs.html"
+                                class="nav-list-link">Club Activation Guide</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/park_2_park.html"
+                                class="nav-list-link">Park to Park</a></li>
+                        <li class="nav-list-item active"><a
+                                href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html"
+                                class="nav-list-link active">Logging Made Easy</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html"
+                                class="nav-list-link">ADIF for POTA Technical Reference</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/n3fjp_guide.html"
+                                class="nav-list-link">Logging with N3FJP</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/hunter_guide-english.html"
+                        class="nav-list-link">Hunter Guide</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/cw_guide.html" class="nav-list-link">CW
+                        Guide</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/digital_modes.html"
+                        class="nav-list-link">Digital Modes Guide</a></li>
+                <li class="nav-list-item"><a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#"
+                        class="nav-list-expander"><svg viewBox="0 0 24 24">
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg></a><a href="https://docs.pota.app/docs/award_events.html"
+                        class="nav-list-link">Events</a>
+                    <ul class="nav-list "></ul>
+                </li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/video_resources.html"
+                        class="nav-list-link">Video Resources</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/support.html"
+                        class="nav-list-link">Support</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/resources_docs.html"
+                        class="nav-list-link">Resources and Documents</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/glossary.html"
+                        class="nav-list-link">Glossary</a></li>
+                <li class="nav-list-item"><a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#"
+                        class="nav-list-expander"><svg viewBox="0 0 24 24">
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg></a><a href="https://docs.pota.app/docs/volunteers.html"
+                        class="nav-list-link">Volunteers</a>
+                    <ul class="nav-list ">
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/volunteers/program-administrators.html"
+                                class="nav-list-link">Program Administrators</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/volunteers/quality-assurance-staff.html"
+                                class="nav-list-link">Quality Assurance Team</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#"
+                                class="nav-list-expander"><svg viewBox="0 0 24 24">
+                                    <use xlink:href="#svg-arrow-right"></use>
+                                </svg></a><a href="https://docs.pota.app/docs/volunteers/mapping-representatives.html"
+                                class="nav-list-link">Mapping Representatives</a>
+                            <ul class="nav-list">
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/africa.html"
+                                        class="nav-list-link">Africa</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/antarctica.html"
+                                        class="nav-list-link">Antarctica</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/asia.html"
+                                        class="nav-list-link">Asia</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/europe.html"
+                                        class="nav-list-link">Europe</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/north-america.html"
+                                        class="nav-list-link">North America</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/oceania.html"
+                                        class="nav-list-link">Oceania</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/south-america.html"
+                                        class="nav-list-link">South America</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/volunteers/development-staff.html"
+                                class="nav-list-link">Development Staff</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/volunteers/support-help-desk-social-media-staff.html"
+                                class="nav-list-link">Support / Help Desk / Social Media Staff</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/privacy.html"
+                        class="nav-list-link">Privacy Policy</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/about.html" class="nav-list-link">About</a>
+                </li>
+            </ul>
+        </nav>
+        <footer class="site-footer"> Copyright © 2018-2023 <br><a href="https://parksontheair.com/">Parks on the
+                Air®</a> </footer>
+    </div>
+    <div class="main" id="top">
+        <div id="main-header" class="main-header">
+            <div class="search">
+                <div class="search-input-wrap"> <input type="text" id="search-input" class="search-input" tabindex="0"
+                        placeholder="Search Parks on the Air Documentation"
+                        aria-label="Search Parks on the Air Documentation" autocomplete="off"> <label for="search-input"
+                        class="search-label"><svg viewBox="0 0 24 24" class="search-icon">
+                            <use xlink:href="#svg-search"></use>
+                        </svg></label> </div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </div>
+        <div id="main-content-wrap" class="main-content-wrap">
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    <li class="breadcrumb-nav-list-item"><a href="https://docs.pota.app/docs/activator.html">Activator
+                            Reference</a></li>
+                    <li class="breadcrumb-nav-list-item"><span>Logging Made Easy</span></li>
+                </ol>
+            </nav>
+            <div id="main-content" class="main-content" role="main">
+                <p><strong>Parks on the Air® Logging Made Easy</strong></p>
+                <p><img src="./Logging Made Easy - Parks on the Air Documentation_files/pota-256x256.png" alt=""></p>
+                <p>Original author: KB2FMH</p>
+                <blockquote class="pota-yellow-warning">
+                    <p>To ensure problem free processing, remember to always double check your log based on the
+                        information contained herein before uploading.</p>
+                </blockquote>
+                <p>The integrity of your log is Your responsibility</p>
+                <p><strong>Table of Contents</strong></p>
+                <ol id="markdown-toc">
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#why-is-logging-for-parks-on-the-air-so-complicated"
+                            id="markdown-toc-why-is-logging-for-parks-on-the-air-so-complicated">Why is logging for
+                            Parks on the Air so complicated?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#how-does-an-adif-log-work"
+                            id="markdown-toc-how-does-an-adif-log-work">How does an ADIF log work?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-is-required-in-a-pota-log"
+                            id="markdown-toc-what-is-required-in-a-pota-log">What is required in a POTA Log?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-are-the-other-fields-for"
+                            id="markdown-toc-what-are-the-other-fields-for">What are the other fields for?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#one-call-different-operators-club-activations"
+                            id="markdown-toc-one-call-different-operators-club-activations">One Call, Different
+                            Operators (Club activations)</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#one-park-more-than-one-geographical-location"
+                            id="markdown-toc-one-park-more-than-one-geographical-location">One Park, more than one
+                            geographical location</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-about-multi-operators-that-are-not-in-a-club"
+                            id="markdown-toc-what-about-multi-operators-that-are-not-in-a-club">What about Multi
+                            Operators that are not in a club?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-if-were-operating-a-special-event-station-ses-from-a-park"
+                            id="markdown-toc-what-if-were-operating-a-special-event-station-ses-from-a-park">What if
+                            we’re operating a Special Event Station (SES) from a Park?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#spotting-an-ses-with-multiple-operators"
+                            id="markdown-toc-spotting-an-ses-with-multiple-operators">Spotting an SES with multiple
+                            operators</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given"
+                            id="markdown-toc-how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given">How
+                            do I log a multi-park activation properly, so all credits are given?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#do-i-need-to-make-separate-files-if-i-use-different-modes"
+                            id="markdown-toc-do-i-need-to-make-separate-files-if-i-use-different-modes">Do I need to
+                            make separate files if I use different modes?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#whats-with-the-file-naming-rules--why-cant-i-name-it-my-way"
+                            id="markdown-toc-whats-with-the-file-naming-rules--why-cant-i-name-it-my-way">What’s with
+                            the file naming rules – why can’t I name it My Way?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#naming-your-files"
+                            id="markdown-toc-naming-your-files">Naming your files</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-if-i-made-a-mistake-how-do-i-replace-the-log-file"
+                            id="markdown-toc-what-if-i-made-a-mistake-how-do-i-replace-the-log-file">What if I made a
+                            mistake, how do I replace the log file?</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#summary"
+                            id="markdown-toc-summary">Summary</a></li>
+                    <li><a href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#references"
+                            id="markdown-toc-references">References</a></li>
+                </ol>
+                <hr>
+                <h1 id="why-is-logging-for-parks-on-the-air-so-complicated"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#why-is-logging-for-parks-on-the-air-so-complicated"
+                        class="anchor-heading" aria-labelledby="why-is-logging-for-parks-on-the-air-so-complicated"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> Why is logging for Parks on the Air so complicated? </h1>
+                <p>That is a question often asked by both veteran and new amateur operators upon joining the program.
+                    They are accustomed to just entering a call into a computer / web based logging application and
+                    that’s it – the computer does the rest.</p>
+                <p>Well, the answer is: It isn’t complicated at all. There are some very easy to follow parameters
+                    (Rules if you like that word) that are in place to make sure every log entered goes the right way
+                    and both activators and hunters get the award credits due them.</p>
+                <p>Yes, it is an award driven program in a way so to ensure the integrity of the program certain simple
+                    rules are in place, easily found on the website, docs.pota.app. But this is about logging only so
+                    let’s go….</p>
+                <p>POTA has a log sorting system that uses the common “Amateur Data Interchange Format” (ADIF) file type
+                    which is used to exchange information between logging programs and log databases such as QRZ, eQSL,
+                    LoTW etc. It is globally uniform and simple.</p>
+                <p>For the purpose of continuity, POTA uses this format so any logging program an activator may use will
+                    be compatible with our system.</p>
+                <h1 id="how-does-an-adif-log-work"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#how-does-an-adif-log-work"
+                        class="anchor-heading" aria-labelledby="how-does-an-adif-log-work"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> How does an ADIF log work? </h1>
+                <p>Imagine a spreadsheet such as that used in software like Excel or the like; there are columns and
+                    rows.</p>
+                <p>In an ADIF file the columns are called Fields and the Rows are where the data goes. Software that
+                    reads ADIF files is designed to look for particular fields, labeled in the top row (header) of each
+                    column, then it extracts the information from those fields to essentially read the log and sort the
+                    information accordingly.</p>
+                <p>The result is what you see in your activator or hunter logs as well as your activity stats and award
+                    allocations.</p>
+                <h1 id="what-is-required-in-a-pota-log"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-is-required-in-a-pota-log"
+                        class="anchor-heading" aria-labelledby="what-is-required-in-a-pota-log"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> What is required in a POTA Log? </h1>
+                <p>POTA has just Five required data fields that Must be in your log for it to be accepted and Five
+                    secondary fields for particular situations. The fields are labeled with “Tags” as they’re called.
+                </p>
+                <p>The five required fields are: <strong>CALL</strong> (callsign you receive) <strong>QSO_DATE</strong>,
+                    <strong>TIME_ON</strong>, <strong>MODE</strong> and <strong>BAND</strong>. These are
+                    self-explanatory. No other fields are needed but may be in it without harm.</p>
+                <p>For a simple activation by one operator in a single park this set is enough to get your log processed
+                    without issue. You still only need these five data sets, just remember to change the date and put
+                    the correct UTC time when logging or transcribing from paper!</p>
+                <h1 id="what-are-the-other-fields-for"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-are-the-other-fields-for"
+                        class="anchor-heading" aria-labelledby="what-are-the-other-fields-for"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> What are the other fields for? </h1>
+                <p>The first set of “optional” fields come into play if you get a call of Park to Park (P2P). Many will
+                    tell you that they aren’t needed, the system catches them automatically, and in essence it Should
+                    but, it doesn’t Always so these fields are insurance in a way, making sure the cross reference is
+                    applied. Remember, insurance never hurts to have.</p>
+                <p>These fields are <strong>MY_SIG_INFO</strong> and <strong>SIG_INFO</strong>. “SIG” meaning Special
+                    Interest Group. Your park ID: Location appropriate letter(s) (K, JA, VK, PA), a dash (-) and 4
+                    number set, is put in MY_SIG_INFO. This field is the same for Every contact whether a P2P or not. If
+                    you have no P2Ps, it is ignored but, when you get that call of “park to park” in your radio, you
+                    will put the “other” operator’s park in the field labeled SIG_INFO and together these two fields
+                    ensure your P2P is credited (as long as the other operator sends in a properly formatted log of
+                    course).</p>
+                <p>NOTE: If you receive a 2fer or 3fer P2P from the Other activator, just make additional entries in
+                    your log But, make sure to put the correct park numbers in the SIG_INFO field so the entries do not
+                    dupe.</p>
+                <p>All data can be identical, Including Time, except the park numbers. That is what will present them as
+                    unique entries to our parsing system.</p>
+                <h1 id="one-call-different-operators-club-activations"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#one-call-different-operators-club-activations"
+                        class="anchor-heading" aria-labelledby="one-call-different-operators-club-activations"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> One Call, Different Operators (Club activations) </h1>
+                <p>The remaining pair of fields are not commonly used and often forgotten. They are
+                    <strong>STATION_CALLSIGN</strong> and <strong>OPERATOR</strong>. These are used when there are two
+                    or more calls associated with an activation.</p>
+                <p>Example:</p>
+                <p>The We Love Radio Club of Galifray activates a POTA entity for its anniversary using the club call,
+                    W1WHO, as the on air callsign. Club member N1ABC is at the mic / key. Both the club and the operator
+                    are registered with individual POTA accounts.</p>
+                <p>Since the club call is the one given on air to incoming calls / hunters, it is put in the field
+                    STATION_CALLSIGN and N1ABC is put in OPERATOR. These fields are carried through with each entry by
+                    your logging application when put in during the initial setup for that park’s specific log.</p>
+                <p>When submitted and processed, the club and the operator get credit for the activation, but hunters
+                    get credit for the actual contact with the club call only, since it was a single contact. If the
+                    operator Also gives his / her call, then a separate log must be submitted for each call.</p>
+                <p>If operators are changed during the activation the OPERATOR field must be updated with the different
+                    call when the change occurs..</p>
+                <h1 id="one-park-more-than-one-geographical-location"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#one-park-more-than-one-geographical-location"
+                        class="anchor-heading" aria-labelledby="one-park-more-than-one-geographical-location"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> One Park, more than one geographical location </h1>
+                <p>If you activate a park that is in more than one state / province / territory, you should include the
+                    specific location in the file field labeled <strong>MY_STATE</strong>. This will allow our parsing
+                    algorithms to assign the credits properly for hunters WAS awards and activators trying to build
+                    their Activated States matrix there are many parks, historic trails and rivers that span multiple
+                    locations in all countries, so it is Your Job to know where you were and put it in the filename. If
+                    you Do Not include the <strong>MY_STATE</strong> field you’ll have to choose it manually when
+                    uploading your file(s).</p>
+                <p>The <strong>MY_STATE</strong> field will be parsed for any location whether a US State, Canadian
+                    Province, Australian Territory or Russian Oblast.</p>
+                <h1 id="what-about-multi-operators-that-are-not-in-a-club"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-about-multi-operators-that-are-not-in-a-club"
+                        class="anchor-heading" aria-labelledby="what-about-multi-operators-that-are-not-in-a-club"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> What about Multi Operators that are not in a club? </h1>
+                <p>When two or more operators activate a park, presuming they all make the same contacts, a single log
+                    can be replicated for each and named accordingly for each callsign (more about naming later).</p>
+                <h1 id="what-if-were-operating-a-special-event-station-ses-from-a-park"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-if-were-operating-a-special-event-station-ses-from-a-park"
+                        class="anchor-heading"
+                        aria-labelledby="what-if-were-operating-a-special-event-station-ses-from-a-park"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> What if we’re operating a Special Event Station (SES) from a Park? </h1>
+                <p>For SES calls, if it will be used by a Single Operator, that operator creates a secondary account
+                    under their own account, properly date limited with particular start – stop for that event. (If
+                    using a short 1x1 call, remember that those can be recycled many times so putting the specific
+                    beginning and ending dates are important for proper credit distribution) That SES Call is put in the
+                    log file field labeled Station_Callsign with the single operator’s call in the Operator field.
+                    Hunters will get the park / points from Only the SES call, which is what is given Over the Air,
+                    while the operator gets the activation and any award specific to the activation Only.</p>
+                <p>If the SES activity will have a conglomerate of operators then it must be added to a Club account, so
+                    All operators get their activation credit. Registered Clubs log files are parsed differently than
+                    personal accounts, which won’t recognize the Other calls in the Operator field and will be rejected
+                    as the other operators are not associated with the personal account.</p>
+                <h1 id="spotting-an-ses-with-multiple-operators"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#spotting-an-ses-with-multiple-operators"
+                        class="anchor-heading" aria-labelledby="spotting-an-ses-with-multiple-operators"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> Spotting an SES with multiple operators </h1>
+                <p>When many are spotting the same call on our spotting page there must be a /X (a unique identifier)
+                    appended after the call to not have one spot bump the previous, even if different bands / modes are
+                    used. Only the SES call is given on the air though, without the /x identifier. I suggest using the
+                    band after the / such as K3Y/40 for 40 meters as an example.</p>
+                <p>Some folks will log it with the /X in their personal log but it only matters if they expect
+                    confirmations Outside of POTA. The important thing would be to make sure to tell any P2Ps to log
+                    ONLY the SES call, sans the /x, and You do the same in the event log. Hunters wil get the park
+                    regardless of They log the contact.</p>
+                <h1 id="how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given"
+                        class="anchor-heading"
+                        aria-labelledby="how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> How do I log a multi-park activation properly, so all credits are given? </h1>
+                <p>This situation is commonly referred to as 2fers, 3fers etc.. and logging is very simple for these.
+                    Create one initial log for Any of the park numbers you’re activating, it makes no difference which –
+                    just make sure it is identified in the <strong>MY_SIG_INFO</strong> field when initiating the log so
+                    it carries over to each entry. Of course, any P2Ps during this activation go in the
+                    <strong>SIG_INFO</strong> field as usual.</p>
+                <p><strong>DO NOT USE</strong> Any other field names! We’ve seen some folks create their own field
+                    labels for P2P entries and then hammer our help desk asking Why they aren’t seeing the matches. The
+                    ONLY fields recognized for a P2P match are those described above.</p>
+                <p>When complete, open the log in any text editing software – I use Notepad in Windows or ADIF Master
+                    which is an application for reading and editing ADIF files. Find the <strong>MY_SIG_INFO</strong>
+                    field if using ADIF Master and select all cells in the column. Right click in one of the selected
+                    cells and choose Replace in Selection. It should show the park number in the find box, and you put
+                    the second (and third if needed in a sequential edit) park number in the “Replace With” box, apply
+                    the changes and click FILE &gt; “Save As” and rename the file with the new park number (presuming
+                    you saved and correctly named the initial log).</p>
+                <p>In Notepad, which is on every Windows based computer, open the file, then EDIT &gt; Replace, put the
+                    initial park number in the Find What box, put the other park(s) in the Replace With box and click
+                    Replace All. Close that dialog window and again, FILE &gt; Save As, changing the park number in the
+                    filename accordingly. For MAC / Apple users, the equivalent application is called simply “TextEdit”
+                </p>
+                <p>NOTE: Always make sure there is a DASH (-) between the location identifier and the numbers in the
+                    Park ID.</p>
+                <p>If you forget and just have for example <strong>K1234</strong>, the file will be rejected. This goes
+                    for Your park and the P2P parks as described above.</p>
+                <h1 id="do-i-need-to-make-separate-files-if-i-use-different-modes"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#do-i-need-to-make-separate-files-if-i-use-different-modes"
+                        class="anchor-heading"
+                        aria-labelledby="do-i-need-to-make-separate-files-if-i-use-different-modes"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> Do I need to make separate files if I use different modes? </h1>
+                <p>Absolutely not. Whether you operated with all SSB or a mix of SSB, CW, AM, FT4/8, Satellite and PSK31
+                    (or Any mode you like) you only make One file for a given park. If you mix modes during an
+                    activation and use WSJT-X, just import those entries into your adi file before uploading.</p>
+                <p>As long as you enter the data accordingly for each mode, our system will sort it out during
+                    processing – we’re That good!</p>
+                <h1 id="whats-with-the-file-naming-rules--why-cant-i-name-it-my-way"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#whats-with-the-file-naming-rules--why-cant-i-name-it-my-way"
+                        class="anchor-heading"
+                        aria-labelledby="whats-with-the-file-naming-rules--why-cant-i-name-it-my-way"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> What’s with the file naming rules – why can’t I name it My Way? </h1>
+                <p>Before we launched the Self-Uploader feature we had just 10 area coordinators processing All logs;
+                    not just from US operators but from around the globe.</p>
+                <p>During that time having a standardized file naming system made tracking logs for any future repairs
+                    easier. I personally saved every log I ever processed and if an activator said they did not get what
+                    they expected once the log was in, I could easily find what they’d sent and look for any problems.
+                </p>
+                <h1 id="naming-your-files"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#naming-your-files"
+                        class="anchor-heading" aria-labelledby="naming-your-files"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> Naming your files </h1>
+                <p>Now, to the naming issue: In preparing for self-uploading a standard had to be agreed upon for the
+                    developers to work with thus, a standard filename format was mandated to get everyone ready for when
+                    self-uploading was released.</p>
+                <p>The standard is as such –</p>
+                <div class="language-plaintext highlighter-rouge">
+                    <div class="highlight">
+                        <pre class="highlight"><code>callsign@park#-yyyymmdd
+</code></pre>
+                    </div>
+                </div>
+                <p>An example using one of my own activations would look like this:</p>
+                <div class="language-plaintext highlighter-rouge">
+                    <div class="highlight">
+                        <pre class="highlight"><code>KB2FMH@K-8088-20220202.adi
+</code></pre>
+                    </div>
+                </div>
+                <p>which was an activation at park K-8088 on February 2nd , 2022. Maintaining a uniform naming system
+                    will help You now.</p>
+                <h1 id="what-if-i-made-a-mistake-how-do-i-replace-the-log-file"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-if-i-made-a-mistake-how-do-i-replace-the-log-file"
+                        class="anchor-heading"
+                        aria-labelledby="what-if-i-made-a-mistake-how-do-i-replace-the-log-file"><svg
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> What if I made a mistake, how do I replace the log file? </h1>
+                <p>If you find you need a log replaced due to an error of any kind, you Must ask either the Help Desk
+                    Or, you area coordinator. Users cannot Delete logs – only upload.</p>
+                <p>In the event of a log file error just click the Down Arrow next to the file on your “My Uploaded
+                    Logs” portal and click Request Help. Include the park ID and date of the file you’d like removed and
+                    one of our support staff will reply when it is done, allowing You to upload a new replacement log.
+                </p>
+                <p>If the file presents errors during upload that you cannot figure out, again, click the Request Help
+                    button and we’re on our way to resolve the issue!</p>
+                <p>Lastly, there are may different logging programs out there that put many different fields in a log
+                    file.</p>
+                <p>Fields such as Frequency, Name, Grid / Locator, County etc.. are Not required for our system so do
+                    not waste time worrying about this data.</p>
+                <p>Of course, you can always ask your area coordinator for help if you feel more comfortable.</p>
+                <h1 id="summary"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#summary"
+                        class="anchor-heading" aria-labelledby="summary"><svg viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> Summary </h1>
+                <p>If you have Any questions that are Not answered in this document or the documents at docs.pota.app
+                    ask our Help Desk or your call area coordinator Before doing anything – we’re here to help.</p>
+                <p>Please, do not rely on hearsay from others or the so-called Facebook experts. The people who built
+                    the system and use it daily know how it works and what is required, that’s why they are doing it.
+                </p>
+                <p>Now get out and activate!</p>
+                <h1 id="references"> <a
+                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#references"
+                        class="anchor-heading" aria-labelledby="references"><svg viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> References </h1>
+                <ul>
+                    <li>We recommend / Support the N3FJP ACLog software and have very clear instructions on setting it
+                        up for POTA use. In Fact, the developer, Scott Davis, created a POTA Template at our request.
+                    </li>
+                    <li>A great video by our own Matt Herre, N3NWV, on how to customize your ACLog application can be
+                        viewed here - https://youtu.be/VePKcyP8ppw.</li>
+                    <li>Instructions for ACLog in general can be viewed Here - https://youtu.be/aIaNKCKkstM</li>
+                    <li>To download ACLog, follow this link - https://www.n3fjp.com/aclog.html</li>
+                    <li>Our old Help / Getting Started - FAQs section is now www.docs.pota.app</li>
+                    <li>You can always start your journey at <a
+                            href="https://www.parksontheair.com/">www.parksontheair.com</a> where you can find the
+                        listing of volunteer staff working to keep POTA growing for you.</li>
+                </ul>
+                <hr>
+                <footer>
+                    <div class="d-flex mt-2">
+                        <p class="text-small text-grey-dk-000 mb-0 mr-2"> Page last modified: <span
+                                class="d-inline-block">May 3 2023</span>. </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="search-overlay"></div>
+    </div>
+</body>
+
+</html>

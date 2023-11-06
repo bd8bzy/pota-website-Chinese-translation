@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html -->
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>ADIF for POTA Technical Reference - Parks on the Air Documentation</title>
+    <link rel="shortcut icon" href="https://docs.pota.app/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="./ADIF for POTA Technical Reference - Parks on the Air Documentation_files/just-the-docs-default.css">
+    <script type="text/javascript"
+        src="./ADIF for POTA Technical Reference - Parks on the Air Documentation_files/lunr.min.js"></script>
+    <script type="text/javascript"
+        src="./ADIF for POTA Technical Reference - Parks on the Air Documentation_files/just-the-docs.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>ADIF for POTA Technical Reference | Parks on the Air Documentation</title>
+    <meta name="generator" content="Jekyll v4.2.2">
+    <meta property="og:title" content="ADIF for POTA Technical Reference">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Parks on the Air Documentation">
+    <meta property="og:description" content="Parks on the Air Documentation">
+    <link rel="canonical" href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html">
+    <meta property="og:url" content="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html">
+    <meta property="og:site_name" content="Parks on the Air Documentation">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="ADIF for POTA Technical Reference">
+    <script
+        type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","dateModified":"2023-09-13T19:33:51+00:00","description":"Parks on the Air Documentation","headline":"ADIF for POTA Technical Reference","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://docs.pota.app/assets/images/docs-pota-logo.png"}},"url":"https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html"}</script>
+    <!-- End Jekyll SEO tag -->
+</head>
+
+<body> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="svg-link" viewBox="0 0 24 24">
+            <title>Link</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-link">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+        </symbol>
+        <symbol id="svg-search" viewBox="0 0 24 24">
+            <title>Search</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </symbol>
+        <symbol id="svg-menu" viewBox="0 0 24 24">
+            <title>Menu</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </symbol>
+        <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+            <title>Expand</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </symbol>
+        <symbol id="svg-doc" viewBox="0 0 24 24">
+            <title>Document</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-file">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+            </svg>
+        </symbol>
+    </svg>
+    <div class="side-bar">
+        <div class="site-header"> <a href="https://docs.pota.app/" class="site-title lh-tight">
+                <div class="site-logo"></div>
+            </a> <a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#" id="menu-button"
+                class="site-button"> <svg viewBox="0 0 24 24" class="icon">
+                    <use xlink:href="#svg-menu"></use>
+                </svg> </a> </div>
+        <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="https://docs.pota.app/" class="nav-list-link">Home</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/rules.html"
+                        class="nav-list-link">Rules</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/code_of_conduct.html"
+                        class="nav-list-link">Code of Conduct</a></li>
+                <li class="nav-list-item active"><a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#"
+                        class="nav-list-expander"><svg viewBox="0 0 24 24">
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg></a><a href="https://docs.pota.app/docs/activator.html" class="nav-list-link">Activator
+                        Reference</a>
+                    <ul class="nav-list ">
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/submitting_logs.html"
+                                class="nav-list-link">Submitting Logs</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/activator_guide-english.html"
+                                class="nav-list-link">Activator Guide</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/activation_styles.html"
+                                class="nav-list-link">Station Footprint Styles</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/activator_guide_clubs.html"
+                                class="nav-list-link">Club Activation Guide</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/park_2_park.html"
+                                class="nav-list-link">Park to Park</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html"
+                                class="nav-list-link">Logging Made Easy</a></li>
+                        <li class="nav-list-item active"><a
+                                href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html"
+                                class="nav-list-link active">ADIF for POTA Technical Reference</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/n3fjp_guide.html"
+                                class="nav-list-link">Logging with N3FJP</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/hunter_guide-english.html"
+                        class="nav-list-link">Hunter Guide</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/cw_guide.html" class="nav-list-link">CW
+                        Guide</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/digital_modes.html"
+                        class="nav-list-link">Digital Modes Guide</a></li>
+                <li class="nav-list-item"><a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#"
+                        class="nav-list-expander"><svg viewBox="0 0 24 24">
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg></a><a href="https://docs.pota.app/docs/award_events.html"
+                        class="nav-list-link">Events</a>
+                    <ul class="nav-list "></ul>
+                </li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/video_resources.html"
+                        class="nav-list-link">Video Resources</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/support.html"
+                        class="nav-list-link">Support</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/resources_docs.html"
+                        class="nav-list-link">Resources and Documents</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/glossary.html"
+                        class="nav-list-link">Glossary</a></li>
+                <li class="nav-list-item"><a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#"
+                        class="nav-list-expander"><svg viewBox="0 0 24 24">
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg></a><a href="https://docs.pota.app/docs/volunteers.html"
+                        class="nav-list-link">Volunteers</a>
+                    <ul class="nav-list ">
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/volunteers/program-administrators.html"
+                                class="nav-list-link">Program Administrators</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/volunteers/quality-assurance-staff.html"
+                                class="nav-list-link">Quality Assurance Team</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#"
+                                class="nav-list-expander"><svg viewBox="0 0 24 24">
+                                    <use xlink:href="#svg-arrow-right"></use>
+                                </svg></a><a href="https://docs.pota.app/docs/volunteers/mapping-representatives.html"
+                                class="nav-list-link">Mapping Representatives</a>
+                            <ul class="nav-list">
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/africa.html"
+                                        class="nav-list-link">Africa</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/antarctica.html"
+                                        class="nav-list-link">Antarctica</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/asia.html"
+                                        class="nav-list-link">Asia</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/europe.html"
+                                        class="nav-list-link">Europe</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/north-america.html"
+                                        class="nav-list-link">North America</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/oceania.html"
+                                        class="nav-list-link">Oceania</a> </li>
+                                <li class="nav-list-item "> <a
+                                        href="https://docs.pota.app/docs/volunteers/continents/south-america.html"
+                                        class="nav-list-link">South America</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/volunteers/development-staff.html"
+                                class="nav-list-link">Development Staff</a></li>
+                        <li class="nav-list-item "><a
+                                href="https://docs.pota.app/docs/volunteers/support-help-desk-social-media-staff.html"
+                                class="nav-list-link">Support / Help Desk / Social Media Staff</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/docs/privacy.html"
+                        class="nav-list-link">Privacy Policy</a></li>
+                <li class="nav-list-item"><a href="https://docs.pota.app/about.html" class="nav-list-link">About</a>
+                </li>
+            </ul>
+        </nav>
+        <footer class="site-footer"> Copyright © 2018-2023 <br><a href="https://parksontheair.com/">Parks on the
+                Air®</a> </footer>
+    </div>
+    <div class="main" id="top">
+        <div id="main-header" class="main-header">
+            <div class="search">
+                <div class="search-input-wrap"> <input type="text" id="search-input" class="search-input" tabindex="0"
+                        placeholder="Search Parks on the Air Documentation"
+                        aria-label="Search Parks on the Air Documentation" autocomplete="off"> <label for="search-input"
+                        class="search-label"><svg viewBox="0 0 24 24" class="search-icon">
+                            <use xlink:href="#svg-search"></use>
+                        </svg></label> </div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </div>
+        <div id="main-content-wrap" class="main-content-wrap">
+            <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    <li class="breadcrumb-nav-list-item"><a href="https://docs.pota.app/docs/activator.html">Activator
+                            Reference</a></li>
+                    <li class="breadcrumb-nav-list-item"><span>ADIF for POTA Technical Reference</span></li>
+                </ol>
+            </nav>
+            <div id="main-content" class="main-content" role="main">
+                <p><strong>Parks on the Air® ADIF Technical Reference Guide</strong></p>
+                <p><img src="./ADIF for POTA Technical Reference - Parks on the Air Documentation_files/pota-256x256.png"
+                        alt=""></p>
+                <p>Original author: W8MSC</p>
+                <p><strong>Table of Contents</strong></p>
+                <ol id="markdown-toc">
+                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#about-adif-for-pota"
+                            id="markdown-toc-about-adif-for-pota">About ADIF for POTA</a>
+                        <ol>
+                            <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#required-adif-fields"
+                                    id="markdown-toc-required-adif-fields">Required ADIF fields</a>
+                                <ol>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#station_callsign-or-operator"
+                                            id="markdown-toc-station_callsign-or-operator">STATION_CALLSIGN or
+                                            OPERATOR</a></li>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#call"
+                                            id="markdown-toc-call">CALL</a></li>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#qso_date"
+                                            id="markdown-toc-qso_date">QSO_DATE</a></li>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#time_on"
+                                            id="markdown-toc-time_on">TIME_ON</a></li>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#band"
+                                            id="markdown-toc-band">BAND</a></li>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#mode-or-submode"
+                                            id="markdown-toc-mode-or-submode">MODE or SUBMODE</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#optional-adif-fields"
+                                    id="markdown-toc-optional-adif-fields">Optional ADIF fields</a>
+                                <ol>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#my_sig-and-my_sig_info"
+                                            id="markdown-toc-my_sig-and-my_sig_info">MY_SIG and MY_SIG_INFO</a></li>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#sig-and-sig_info"
+                                            id="markdown-toc-sig-and-sig_info">SIG and SIG_INFO</a></li>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#my_state"
+                                            id="markdown-toc-my_state">MY_STATE</a></li>
+                                    <li><a href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#example-of-a-simple-log-file"
+                                            id="markdown-toc-example-of-a-simple-log-file">Example of a simple log
+                                            file</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr>
+                <h1 id="about-adif-for-pota"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#about-adif-for-pota"
+                        class="anchor-heading" aria-labelledby="about-adif-for-pota"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> About ADIF for POTA </h1>
+                <p>POTA requires activators to submit their log files in the <a href="https://adif.org/">ADIF
+                        format</a>. This document provides some ADIF fields that POTA uses in POTA-specific ways. This
+                    document also includes a general illustration of common ADIF fields with examples. The latter part
+                    is intended to be explanatory and not limit or redefine the ADIF standard.</p>
+                <h2 id="required-adif-fields"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#required-adif-fields"
+                        class="anchor-heading" aria-labelledby="required-adif-fields"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> Required ADIF fields </h2>
+                <p>At a minimum, POTA requires the following items to tally your QSOs properly:</p>
+                <h3 id="station_callsign-or-operator"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#station_callsign-or-operator"
+                        class="anchor-heading" aria-labelledby="station_callsign-or-operator"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> STATION_CALLSIGN or OPERATOR </h3>
+                <p><strong>STATION_CALLSIGN</strong>: This is the callsign given over the air. This may be identical to
+                    <strong>OPERATOR</strong> or omitted for individual activations. Club/group activations must use the
+                    club’s callsign.</p>
+                <p><strong>OPERATOR</strong>: This is the callsign of the individual making contact. This may be
+                    identical to <strong>STATION_CALLSIGN</strong> or omitted for individual activations. Club/group
+                    activations must include this field.</p>
+                <p>Each field consists of alphabet characters A-Z, numbers 0-9, and the / character. No other
+                    characters, including accents, are allowed here.</p>
+                <p>Example: <code class="language-plaintext highlighter-rouge">&lt;STATION_CALLSIGN:4&gt;N8SL</code></p>
+                <h3 id="call"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#call"
+                        class="anchor-heading" aria-labelledby="call"><svg viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> CALL </h3>
+                <p><strong>CALL</strong>: This is the callsign of the hunter. Same allowed characters as
+                    <strong>STATION_CALLSIGN</strong>.</p>
+                <p>Example: <code class="language-plaintext highlighter-rouge">&lt;CALL:5&gt;K8ERS</code></p>
+                <h3 id="qso_date"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#qso_date"
+                        class="anchor-heading" aria-labelledby="qso_date"><svg viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> QSO_DATE </h3>
+                <p><strong>QSO_DATE</strong>: This is the date a QSO was started, in UTC.</p>
+                <p>It is entered as an 8-digit number in YYYYMMDD format, with a 4-digit year, 2-digit month, and
+                    2-digit day.</p>
+                <p>Future dates are rejected.</p>
+                <p>The month is entered with 2-digits, with a leading digit of 0 up to September. Numbers less than 01
+                    or more than 12 will result in an invalid month. Example: January is 01, February is 02, through 12
+                    for December. The day is entered with 2-digits, with a leading digit of 0 for the first nine days.
+                    Example: the first day of a month is 01, the second day is 02, through 31 for the last day of a
+                    month.</p>
+                <p>Example: July 15, 2019 is recorded as <code
+                        class="language-plaintext highlighter-rouge">&lt;QSO_DATE:8&gt;20190715</code></p>
+                <h3 id="time_on"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#time_on"
+                        class="anchor-heading" aria-labelledby="time_on"><svg viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> TIME_ON </h3>
+                <p><strong>TIME_ON</strong>: This is the time a QSO was started, in UTC. <em>POTA tallies QSOs based on
+                        when a QSO was started, not completed.</em></p>
+                <p>This can be either 4 or 6 digits, entered as HHMM or HHMMSS, where HH is the hour 00 through 23, MM
+                    is minute 00 through 59, and SS for second 00 through 59. Hour and minute are required, while
+                    seconds are optional.</p>
+                <p>Example: <code class="language-plaintext highlighter-rouge">&lt;TIME_ON:4&gt;0945</code> or <code
+                        class="language-plaintext highlighter-rouge">&lt;TIME_ON:6&gt;094500</code></p>
+                <h3 id="band"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#band"
+                        class="anchor-heading" aria-labelledby="band"><svg viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> BAND </h3>
+                <p><strong>BAND</strong>: This is the band the QSO took place.</p>
+                <p>The band is recorded with the unit measurement. For example, a QSO on 20 meters will be recorded as
+                    20M, not 20.</p>
+                <p>Most QSOs are simplex. In duplex or cross-band QSOs, such as satellite contacts, specify the
+                    activator’s transmission or uplink band in this field.</p>
+                <p>Example: <code class="language-plaintext highlighter-rouge">&lt;BAND:3&gt;20M</code></p>
+                <h3 id="mode-or-submode"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#mode-or-submode"
+                        class="anchor-heading" aria-labelledby="mode-or-submode"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> MODE or SUBMODE </h3>
+                <p><strong>MODE</strong>: This is the mode used to make the QSO.</p>
+                <p><strong>SUBMODE</strong>: This is the submode used to make the QSO.</p>
+                <p>Valid modes and submodes are listed in the ADIF spec. POTA allows certain expectations as listed in
+                    the <a href="https://docs.pota.app/docs/rules.html#logging-requirements">Parks on the Air rules</a>.
+                    POTA only stores a single MODE field; if both mode and submode are provided, submode takes
+                    precedence.</p>
+                <p>Example: <code class="language-plaintext highlighter-rouge">&lt;MODE:3&gt;SSB</code></p>
+                <h2 id="optional-adif-fields"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#optional-adif-fields"
+                        class="anchor-heading" aria-labelledby="optional-adif-fields"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> Optional ADIF fields </h2>
+                <p>Optional ADIF fields support park-specific information. These data are processed for your activation
+                    location and park-to-park contacts, primarily when an activator is located at multiple parks during
+                    the same UTC day or when many operators contribute to contacts for a club callsign or special event
+                    callsign. When the <code class="language-plaintext highlighter-rouge">MY_SIG</code> and <code
+                        class="language-plaintext highlighter-rouge">MY_SIG_INFO</code> fields are missing or invalid,
+                    the POTA uploader will prompt the user for the needed information during the upload process.</p>
+                <h3 id="my_sig-and-my_sig_info"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#my_sig-and-my_sig_info"
+                        class="anchor-heading" aria-labelledby="my_sig-and-my_sig_info"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> MY_SIG and MY_SIG_INFO </h3>
+                <p><strong>MY_SIG</strong>: Special Interest Group. Insert “POTA” in this field.</p>
+                <p>Example:</p>
+                <p><code class="language-plaintext highlighter-rouge">&lt;MY_SIG:4&gt;POTA</code></p>
+                <p><strong>MY_SIG_INFO</strong>: Specify the POTA park reference number for the activator’s park: the
+                    POTA program prefix (K, VE, etc.) followed by a hyphen (-) and then a number.</p>
+                <p>Example:</p>
+                <p><code class="language-plaintext highlighter-rouge">&lt;MY_SIG_INFO:6&gt;K-0005</code> represents
+                    Badlands National Park in the United States.</p>
+                <p><code class="language-plaintext highlighter-rouge">&lt;MY_SIG_INFO:7&gt;VE-0005</code> represents
+                    Banff National Park in Canada.</p>
+                <p>The following optional fields are used in park-to-park QSO to specify the other activator’s park
+                    reference.</p>
+                <h3 id="sig-and-sig_info"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#sig-and-sig_info"
+                        class="anchor-heading" aria-labelledby="sig-and-sig_info"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> SIG and SIG_INFO </h3>
+                <p><strong>SIG</strong>: Special Interest Group. Specify “POTA” in this field.</p>
+                <p><strong>SIG_INFO</strong>: The park reference number of the other activator’s park.</p>
+                <p>A P2P contact with another activator would be logged with: <code
+                        class="language-plaintext highlighter-rouge">&lt;SIG:4&gt;POTA</code> and <code
+                        class="language-plaintext highlighter-rouge">&lt;SIG_INFO:6&gt;K-0008</code></p>
+                <h3 id="my_state"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#my_state"
+                        class="anchor-heading" aria-labelledby="my_state"><svg viewBox="0 0 16 16" aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> MY_STATE </h3>
+                <p><strong>MY_STATE</strong>: The logging station’s primary administrative subdivision code (e.g., US
+                    state, JA prefecture, VE province). If the park being activated crosses administrative lines (state,
+                    province, etc.), the uploader will try to use the code in this field to determine the location of
+                    the activator. If missing, invalid, or unrecognized, the uploader will prompt the user for this
+                    information.</p>
+                <h3 id="example-of-a-simple-log-file"> <a
+                        href="https://docs.pota.app/docs/activator_reference/ADIF_for_POTA_reference.html#example-of-a-simple-log-file"
+                        class="anchor-heading" aria-labelledby="example-of-a-simple-log-file"><svg viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <use xlink:href="#svg-link"></use>
+                        </svg></a> Example of a simple log file </h3>
+                <p>The following short log file is an example of a properly formatted log file.</p>
+                <div class="language-plaintext highlighter-rouge">
+                    <div class="highlight">
+                        <pre class="highlight"><code>Parks On The Air Field Logger
+&lt;PROGRAMID:17&gt;POTA Field Logger
+&lt;PROGRAMVERSION:5&gt;0.2.8
+&lt;CREATED_TIMESTAMP:13&gt;20201002 134537&lt;EOH&gt;
+&lt;STATION_CALLSIGN:5&gt;W8MSC &lt;CALL:5&gt;W8TAM &lt;QSO_DATE:8&gt;20201002 &lt;TIME_ON:6&gt;134100 &lt;BAND:3&gt;40M &lt;MODE:3&gt;SSB &lt;MY_SIG:4&gt;POTA &lt;MY_SIG_INFO:6&gt;K-3315 &lt;EOR&gt;
+&lt;STATION_CALLSIGN:5&gt;W8MSC &lt;CALL:5&gt;N3VEM &lt;QSO_DATE:8&gt;20201002 &lt;TIME_ON:6&gt;134200 &lt;BAND:3&gt;40M &lt;MODE:3&gt;SSB &lt;MY_SIG:4&gt;POTA &lt;MY_SIG_INFO:6&gt;K-3315 &lt;EOR&gt;
+&lt;STATION_CALLSIGN:5&gt;W8MSC &lt;CALL:5&gt;W3AAX &lt;QSO_DATE:8&gt;20201002 &lt;TIME_ON:6&gt;134300 &lt;BAND:3&gt;40M &lt;MODE:3&gt;SSB &lt;MY_SIG:4&gt;POTA &lt;MY_SIG_INFO:6&gt;K-3315 &lt;EOR&gt;
+&lt;STATION_CALLSIGN:5&gt;W8MSC &lt;CALL:4&gt;N0AW &lt;QSO_DATE:8&gt;20201002 &lt;TIME_ON:6&gt;134500 &lt;BAND:3&gt;40M &lt;MODE:3&gt;SSB &lt;MY_SIG:4&gt;POTA &lt;MY_SIG_INFO:6&gt;K-3315 &lt;SIG:4&gt;POTA &lt;SIG_INFO:6&gt;K-0008 &lt;EOR&gt;
+&lt;STATION_CALLSIGN:5&gt;W8MSC &lt;CALL:4&gt;W5RB &lt;QSO_DATE:8&gt;20201002 &lt;TIME_ON:6&gt;134600 &lt;BAND:3&gt;40M &lt;MODE:3&gt;SSB &lt;MY_SIG:4&gt;POTA &lt;MY_SIG_INFO:6&gt;K-3315 &lt;EOR&gt;
+&lt;STATION_CALLSIGN:5&gt;W8MSC &lt;CALL:6&gt;HI8ILO &lt;QSO_DATE:8&gt;20201002 &lt;TIME_ON:6&gt;135000 &lt;BAND:3&gt;20M &lt;MODE:3&gt;SSB &lt;MY_SIG:4&gt;POTA &lt;MY_SIG_INFO:6&gt;K-3315 &lt;EOR&gt;
+&lt;STATION_CALLSIGN:5&gt;W8MSC &lt;CALL:5&gt;N3NWV &lt;QSO_DATE:8&gt;20201002 &lt;TIME_ON:6&gt;135100 &lt;BAND:3&gt;20M &lt;MODE:3&gt;SSB &lt;MY_SIG:4&gt;POTA &lt;MY_SIG_INFO:6&gt;K-3315 &lt;EOR&gt;
+</code></pre>
+                    </div>
+                </div>
+                <p>A downloadable version of this sample file <a
+                        href="https://docs.pota.app/assets/documents/exampleLog.adi">is available here for
+                        reference.</a></p>
+                <p>Each QSO is composed of the station callsign of the activator, the callsign of each hunter, date,
+                    time, band, mode, and the POTA fields listing the park being activated. A single space separates
+                    fields. The QSO with N0AW describes a park-to-park contact with the park information of the other
+                    park listed in the optional fields.</p>
+                <hr>
+                <footer>
+                    <div class="d-flex mt-2">
+                        <p class="text-small text-grey-dk-000 mb-0 mr-2"> Page last modified: <span
+                                class="d-inline-block">Sep 13 2023</span>. </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="search-overlay"></div>
+    </div>
+</body>
+
+</html>
