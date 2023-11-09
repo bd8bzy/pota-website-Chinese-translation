@@ -212,7 +212,7 @@
             <nav aria-label="Breadcrumb" class="breadcrumb-nav">
                 <ol class="breadcrumb-nav-list">
                     <li class="breadcrumb-nav-list-item"><a href="../../activator_reference/activator_reference/Activator Reference - Parks on the Air Documentation.html">激活人参考</a></li>
-                    <li class="breadcrumb-nav-list-item"><span>Logging Made Easy</span></li>
+                    <li class="breadcrumb-nav-list-item"><span>让日志更简单</span></li>
                 </ol>
             </nav>
             <div id="main-content" class="main-content" role="main">
@@ -234,7 +234,7 @@
                     <li><a href="#what-are-the-other-fields-for"
                             id="markdown-toc-what-are-the-other-fields-for">额外的那些字段是干什么用的？</a></li>
                     <li><a href="#one-call-different-operators-club-activations"
-                            id="markdown-toc-one-call-different-operators-club-activations">不同操作员一个呼叫（俱乐部激活）</a></li>
+                            id="markdown-toc-one-call-different-operators-club-activations">不同操作员共用一个呼号（俱乐部激活）</a></li>
                     <li><a href="#one-park-more-than-one-geographical-location"
                             id="markdown-toc-one-park-more-than-one-geographical-location">一个公园跨多个地理位置</a></li>
                     <li><a href="#what-about-multi-operators-that-are-not-in-a-club"
@@ -264,277 +264,173 @@
                         class="anchor-heading" aria-labelledby="why-is-logging-for-parks-on-the-air-so-complicated"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> Why is logging for Parks on the Air so complicated? </h1>
-                <p>That is a question often asked by both veteran and new amateur operators upon joining the program.
-                    They are accustomed to just entering a call into a computer / web based logging application and
-                    that’s it – the computer does the rest.</p>
-                <p>Well, the answer is: It isn’t complicated at all. There are some very easy to follow parameters
-                    (Rules if you like that word) that are in place to make sure every log entered goes the right way
-                    and both activators and hunters get the award credits due them.</p>
-                <p>Yes, it is an award driven program in a way so to ensure the integrity of the program certain simple
-                    rules are in place, easily found on the website, docs.pota.app. But this is about logging only so
-                    let’s go….</p>
-                <p>POTA has a log sorting system that uses the common “Amateur Data Interchange Format” (ADIF) file type
-                    which is used to exchange information between logging programs and log databases such as QRZ, eQSL,
-                    LoTW etc. It is globally uniform and simple.</p>
-                <p>For the purpose of continuity, POTA uses this format so any logging program an activator may use will
-                    be compatible with our system.</p>
+                        </svg></a>POTA 的日志处理为什么比较复杂？</h1>
+                <p>这个问题无论ham老鸟还是新手，在刚玩儿 POTA 时经常会问。他们习惯于就是简单地把呼号往日志软件或网站里一输，就搞定。</p>
+                <p>好吧，答案是：POTA 的日志处理其实也没多复杂。只是有些简单参数（或说规则）用来确保激活人/猎人双方都能赢取相关的积分而已。</p>
+                <p>是的，POTA 是一项积分驱动的奖项活动，其网站、docs.pota.app 等上面说明了相关规则。但本文是关于日志这块儿的，好我们继续...</p>
+                <p>POTA 使用“业余无线电数交换格式”（ADIF）文件处理日志，这是种日志软件和日志数据库如 QRZ、eQSL、LoTW等之间进行数据同步的有效格式，在ham届广泛应用。</p>
+                <p>为了保持一致性方便性，ham常用的任何日志软件所生成的 ADIF 格式文件都可被 POTA 平台所兼容。</p>
                 <h1 id="how-does-an-adif-log-work"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#how-does-an-adif-log-work"
+                        href="#how-does-an-adif-log-work"
                         class="anchor-heading" aria-labelledby="how-does-an-adif-log-work"><svg viewBox="0 0 16 16"
                             aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> How does an ADIF log work? </h1>
-                <p>Imagine a spreadsheet such as that used in software like Excel or the like; there are columns and
-                    rows.</p>
-                <p>In an ADIF file the columns are called Fields and the Rows are where the data goes. Software that
-                    reads ADIF files is designed to look for particular fields, labeled in the top row (header) of each
-                    column, then it extracts the information from those fields to essentially read the log and sort the
-                    information accordingly.</p>
-                <p>The result is what you see in your activator or hunter logs as well as your activity stats and award
-                    allocations.</p>
+                        </svg></a>ADIF 文件是怎么工作的？</h1>
+                <p>想象一个含有行列的数据表程序，例如 Excel。</p>
+                <p>ADIF 里，每列称为“字段”，每行就是你的通联数据。各类日志软件读取 ADIF 文件后会寻找表头所定义的特定字段，然后将其提取出来用于处理分析。</p>
+                <p>你的激活人日志、猎人记录、激活状态、奖项等由此得出。</p>
                 <h1 id="what-is-required-in-a-pota-log"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-is-required-in-a-pota-log"
+                        href="#what-is-required-in-a-pota-log"
                         class="anchor-heading" aria-labelledby="what-is-required-in-a-pota-log"><svg viewBox="0 0 16 16"
                             aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> What is required in a POTA Log? </h1>
-                <p>POTA has just Five required data fields that Must be in your log for it to be accepted and Five
-                    secondary fields for particular situations. The fields are labeled with “Tags” as they’re called.
-                </p>
-                <p>The five required fields are: <strong>CALL</strong> (callsign you receive) <strong>QSO_DATE</strong>,
-                    <strong>TIME_ON</strong>, <strong>MODE</strong> and <strong>BAND</strong>. These are
-                    self-explanatory. No other fields are needed but may be in it without harm.</p>
-                <p>For a simple activation by one operator in a single park this set is enough to get your log processed
-                    without issue. You still only need these five data sets, just remember to change the date and put
-                    the correct UTC time when logging or transcribing from paper!</p>
+                        </svg></a>POTA 日志里须要有些什么？</h1>
+                <p>POTA 只有5个必填字段，对某些特定台站另有5个额外字段。这些字段被称之为“标签”（Tag）。</p>
+                <p>五个必填字段是：<strong>CALL</strong> (对方呼号) <strong>QSO_DATE</strong>,
+                    <strong>TIME_ON</strong>, <strong>MODE</strong> 及 <strong>BAND</strong>。这都无须解释。没有更多必须的字段了，虽说多放一些字段也没问题。</p>
+                <p>单人单公园的激活这些字段就够了。只是在从纸质日志誊抄时记得将日期换算成正确的 UTC 时间！</p>
                 <h1 id="what-are-the-other-fields-for"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-are-the-other-fields-for"
+                        href="#what-are-the-other-fields-for"
                         class="anchor-heading" aria-labelledby="what-are-the-other-fields-for"><svg viewBox="0 0 16 16"
                             aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> What are the other fields for? </h1>
-                <p>The first set of “optional” fields come into play if you get a call of Park to Park (P2P). Many will
-                    tell you that they aren’t needed, the system catches them automatically, and in essence it Should
-                    but, it doesn’t Always so these fields are insurance in a way, making sure the cross reference is
-                    applied. Remember, insurance never hurts to have.</p>
-                <p>These fields are <strong>MY_SIG_INFO</strong> and <strong>SIG_INFO</strong>. “SIG” meaning Special
-                    Interest Group. Your park ID: Location appropriate letter(s) (K, JA, VK, PA), a dash (-) and 4
-                    number set, is put in MY_SIG_INFO. This field is the same for Every contact whether a P2P or not. If
-                    you have no P2Ps, it is ignored but, when you get that call of “park to park” in your radio, you
-                    will put the “other” operator’s park in the field labeled SIG_INFO and together these two fields
-                    ensure your P2P is credited (as long as the other operator sends in a properly formatted log of
-                    course).</p>
-                <p>NOTE: If you receive a 2fer or 3fer P2P from the Other activator, just make additional entries in
-                    your log But, make sure to put the correct park numbers in the SIG_INFO field so the entries do not
-                    dupe.</p>
-                <p>All data can be identical, Including Time, except the park numbers. That is what will present them as
-                    unique entries to our parsing system.</p>
+                        </svg></a>额外的那些字段是干什么用的？</h1>
+                <p>第一组“可选”字段是用于公园对公园（P2P）的。有些人可能会告诉你用不到这些啦、系统会自动缓存他们啦... 之类。虽说可能是这样的，但多做点互相参照多做点保险总没错。</p>
+                <p>这些组字段是 <strong>MY_SIG_INFO</strong> 及 <strong>SIG_INFO</strong>。 “SIG” 意思是特殊兴趣组（Special Interest Group）。 MY_SIG_INFO 里会以位置指示字母 (K, JA, VK, PA)+短横杠（-）+ 四个数字的格式放置你的公园ID。 无论是否是 P2P，对每个通联来说这个字段都是一样的。如果你不是在 P2P，这个字段会被忽略；但在 P2P 情形下，你将通联对方的公园ID记录在 SIG_INFO 字段里，然后这两个字段一起就能确保你获取相应的 P2P 积分（当然对方也要以有效格式上传日志才行）。</p>
+                <p>注意：如果你通联了一个买一送n的激活人，记得在你日志文件里增加对应条目，并分别填好 SIG_INFO 以防被去重。</p>
+                <p>所有数据（甚至时间）都可以相同，但公园号码不能一样。这就是为什么公园ID在我们系统里是唯一的。</p>
                 <h1 id="one-call-different-operators-club-activations"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#one-call-different-operators-club-activations"
+                        href="#one-call-different-operators-club-activations"
                         class="anchor-heading" aria-labelledby="one-call-different-operators-club-activations"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> One Call, Different Operators (Club activations) </h1>
-                <p>The remaining pair of fields are not commonly used and often forgotten. They are
-                    <strong>STATION_CALLSIGN</strong> and <strong>OPERATOR</strong>. These are used when there are two
-                    or more calls associated with an activation.</p>
-                <p>Example:</p>
-                <p>The We Love Radio Club of Galifray activates a POTA entity for its anniversary using the club call,
-                    W1WHO, as the on air callsign. Club member N1ABC is at the mic / key. Both the club and the operator
-                    are registered with individual POTA accounts.</p>
-                <p>Since the club call is the one given on air to incoming calls / hunters, it is put in the field
-                    STATION_CALLSIGN and N1ABC is put in OPERATOR. These fields are carried through with each entry by
-                    your logging application when put in during the initial setup for that park’s specific log.</p>
-                <p>When submitted and processed, the club and the operator get credit for the activation, but hunters
-                    get credit for the actual contact with the club call only, since it was a single contact. If the
-                    operator Also gives his / her call, then a separate log must be submitted for each call.</p>
-                <p>If operators are changed during the activation the OPERATOR field must be updated with the different
-                    call when the change occurs..</p>
+                        </svg></a>不同操作员共用一个呼号（俱乐部激活）</h1>
+                <p>下述字段因为不常用经常会被漏下，它们是<strong>STATION_CALLSIGN</strong> 及 <strong>OPERATOR</strong>。在同一个台有多个关联呼叫时这些字段会被用到。</p>
+                <p>例如：Galifray 的“我爱无线电”俱乐部以 W1WHO 的呼号在他们的周年纪念活动里激活了一个POTA 公园，俱乐部成员 N1ABC 负责话筒/按键。俱乐部和操作员都要在 POTA 里建有注册账户。</p>
+                <p>因为电波里使用的是俱乐部呼号，这个呼号要填入 STATION_CALLSIGN 字段；操作员的呼号要填入 OPERATOR 字段。这些字段在设置日志软件的时候就配好，然后会一直持续带入各条通联记录内。</p>
+                <p>提交日志之后，俱乐部和操作员都会分别赢得积分，但与他们通联的猎人只会赢得一次积分，因为这是一次通联。如果操作员单独做了呼叫，那么他/她需要单独上传自己的日志。</p>
+                <p>当操作员有轮值时，必须记得在日志文件里切换 OPERATOR 字段。</p>
                 <h1 id="one-park-more-than-one-geographical-location"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#one-park-more-than-one-geographical-location"
+                        href="#one-park-more-than-one-geographical-location"
                         class="anchor-heading" aria-labelledby="one-park-more-than-one-geographical-location"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> One Park, more than one geographical location </h1>
-                <p>If you activate a park that is in more than one state / province / territory, you should include the
-                    specific location in the file field labeled <strong>MY_STATE</strong>. This will allow our parsing
-                    algorithms to assign the credits properly for hunters WAS awards and activators trying to build
-                    their Activated States matrix there are many parks, historic trails and rivers that span multiple
-                    locations in all countries, so it is Your Job to know where you were and put it in the filename. If
-                    you Do Not include the <strong>MY_STATE</strong> field you’ll have to choose it manually when
-                    uploading your file(s).</p>
-                <p>The <strong>MY_STATE</strong> field will be parsed for any location whether a US State, Canadian
-                    Province, Australian Territory or Russian Oblast.</p>
+                        </svg></a>一个公园跨多个地理位置</h1>
+                <p>如果你激活的公园横跨多个州/省市/区县等，你应当将特殊的地址记录在 <strong>MY_STATE</strong> 字段中。这会使得我们的系统得以为猎人 WAS 奖项、为打造自己的州激活矩阵的激活者们分配相应的积分。有很多的公园、历史路径、河流等横跨多个州/省市/区县，因此将它们放入你的文件中就是你自己的职责。如果你没有将其放入 <strong>MY_STATE</strong> 字段，那你就需要在上传文件时手动指定。</p>
+                <p><strong>MY_STATE</strong> 字段会在美国、加拿大、澳大利亚、俄罗斯的相关位置解析时生效。</p>
                 <h1 id="what-about-multi-operators-that-are-not-in-a-club"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-about-multi-operators-that-are-not-in-a-club"
+                        href="#what-about-multi-operators-that-are-not-in-a-club"
                         class="anchor-heading" aria-labelledby="what-about-multi-operators-that-are-not-in-a-club"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> What about Multi Operators that are not in a club? </h1>
-                <p>When two or more operators activate a park, presuming they all make the same contacts, a single log
-                    can be replicated for each and named accordingly for each callsign (more about naming later).</p>
+                        </svg></a>多个操作员（非俱乐部）怎么处理？</h1>
+                <p>当两个以上操作员在同一个公园激活时，假设他们都做了相同的通联，那么可以复制出同一个日志并将其根据各自的呼号分别命名（后面会说到名字）。</p>
                 <h1 id="what-if-were-operating-a-special-event-station-ses-from-a-park"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-if-were-operating-a-special-event-station-ses-from-a-park"
+                        href="#what-if-were-operating-a-special-event-station-ses-from-a-park"
                         class="anchor-heading"
                         aria-labelledby="what-if-were-operating-a-special-event-station-ses-from-a-park"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> What if we’re operating a Special Event Station (SES) from a Park? </h1>
-                <p>For SES calls, if it will be used by a Single Operator, that operator creates a secondary account
-                    under their own account, properly date limited with particular start – stop for that event. (If
-                    using a short 1x1 call, remember that those can be recycled many times so putting the specific
-                    beginning and ending dates are important for proper credit distribution) That SES Call is put in the
-                    log file field labeled Station_Callsign with the single operator’s call in the Operator field.
-                    Hunters will get the park / points from Only the SES call, which is what is given Over the Air,
-                    while the operator gets the activation and any award specific to the activation Only.</p>
-                <p>If the SES activity will have a conglomerate of operators then it must be added to a Club account, so
-                    All operators get their activation credit. Registered Clubs log files are parsed differently than
-                    personal accounts, which won’t recognize the Other calls in the Operator field and will be rejected
-                    as the other operators are not associated with the personal account.</p>
+                        </svg></a>如果正在某公园里操作一个特别事件电台（SES）呢？</h1>
+                <p>对于 SES 呼叫，如果是单一一个操作员，那他须要在他的主账户下创建第二个账号，并将时间起止根据事件活动的要求设好（如果使用了1x1短呼号，记住这些呼号可能日后会被回收重复利用，因此设置好相应的起止时间对赢取积分很重要）。事件呼号记录在 Station_Callsign 字段里，然后操作员呼号记录在 Operator 字段里。猎人们仅会根据电波里传来的 SES 呼叫赢取积分，而操作员会赢取相关的激活积分。</p>
+                <p>如果 SES 激活对应着多名操作员，那么必须使用俱乐部账户，这样各个操作员才能获得他们各自的激活积分。俱乐部的日志文件处理不同于个体的日志文件处理。对于个体来说，Operator 字段不会被识别，如有会被拒掉，因为个体账户无法关联其他操作员。</p>
                 <h1 id="spotting-an-ses-with-multiple-operators"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#spotting-an-ses-with-multiple-operators"
+                        href="#spotting-an-ses-with-multiple-operators"
                         class="anchor-heading" aria-labelledby="spotting-an-ses-with-multiple-operators"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> Spotting an SES with multiple operators </h1>
-                <p>When many are spotting the same call on our spotting page there must be a /X (a unique identifier)
-                    appended after the call to not have one spot bump the previous, even if different bands / modes are
-                    used. Only the SES call is given on the air though, without the /x identifier. I suggest using the
-                    band after the / such as K3Y/40 for 40 meters as an example.</p>
-                <p>Some folks will log it with the /X in their personal log but it only matters if they expect
-                    confirmations Outside of POTA. The important thing would be to make sure to tell any P2Ps to log
-                    ONLY the SES call, sans the /x, and You do the same in the event log. Hunters wil get the park
-                    regardless of They log the contact.</p>
+                        </svg></a>SES 的多操作员打点</h1>
+                <p>如果在我们的打点页面上由多人对同一个呼号进行打点，无论是否在同一个波段/模式，必须在呼号后面以 /X（唯一标识符）分别进行后缀区分，这样会避免前一个呼号将后面的同一个呼号冲掉。但电波里呼叫时不要带有后缀。建议采用波段进行后缀，例如 K3Y/40 表示40米上的呼叫。</p>
+                <p>有些人会在自己的日志里加上 /X 的后缀，但这只用在 POTA 之外。更重要的事情是确保你的 P2P 方仅记录不带后缀的 SES 呼号，你的事件活动日志里也一样。猎人无论日志与否都会获得应有积分。</p>
                 <h1 id="how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given"
+                        href="#how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given"
                         class="anchor-heading"
                         aria-labelledby="how-do-i-log-a-multi-park-activation-properly-so-all-credits-are-given"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> How do I log a multi-park activation properly, so all credits are given? </h1>
-                <p>This situation is commonly referred to as 2fers, 3fers etc.. and logging is very simple for these.
-                    Create one initial log for Any of the park numbers you’re activating, it makes no difference which –
-                    just make sure it is identified in the <strong>MY_SIG_INFO</strong> field when initiating the log so
-                    it carries over to each entry. Of course, any P2Ps during this activation go in the
-                    <strong>SIG_INFO</strong> field as usual.</p>
-                <p><strong>DO NOT USE</strong> Any other field names! We’ve seen some folks create their own field
-                    labels for P2P entries and then hammer our help desk asking Why they aren’t seeing the matches. The
-                    ONLY fields recognized for a P2P match are those described above.</p>
-                <p>When complete, open the log in any text editing software – I use Notepad in Windows or ADIF Master
-                    which is an application for reading and editing ADIF files. Find the <strong>MY_SIG_INFO</strong>
-                    field if using ADIF Master and select all cells in the column. Right click in one of the selected
-                    cells and choose Replace in Selection. It should show the park number in the find box, and you put
-                    the second (and third if needed in a sequential edit) park number in the “Replace With” box, apply
-                    the changes and click FILE &gt; “Save As” and rename the file with the new park number (presuming
-                    you saved and correctly named the initial log).</p>
-                <p>In Notepad, which is on every Windows based computer, open the file, then EDIT &gt; Replace, put the
-                    initial park number in the Find What box, put the other park(s) in the Replace With box and click
-                    Replace All. Close that dialog window and again, FILE &gt; Save As, changing the park number in the
-                    filename accordingly. For MAC / Apple users, the equivalent application is called simply “TextEdit”
-                </p>
-                <p>NOTE: Always make sure there is a DASH (-) between the location identifier and the numbers in the
-                    Park ID.</p>
-                <p>If you forget and just have for example <strong>K1234</strong>, the file will be rejected. This goes
-                    for Your park and the P2P parks as described above.</p>
+                        </svg></a>如何记录多公园激活以赢取全部积分？</h1>
+                <p>在买一送n情形里，日志也没多复杂。记得在初始化阶段将激活的公园号码填入 <strong>MY_SIG_INFO</strong> 字段，后继过程中它自然会带进各条通联记录里。期间做的 P2P 通联，将对应的公园ID填入 <strong>SIG_INFO</strong> 字段。</p>
+                <p><strong>请勿</strong> 使用其他字段名！我们已经见过太多人为 P2P 创建他们自己的字段标签，然后跑来帮助台询问为什么他们的条目匹配不出来。我们系统唯一识别的 P2P 字段就是上面描述的那些，请勿自造。</p>
+                <p>完成之后，可以用任意文本编辑器，例如 Windows 自带的记事本，或者 ADIF Master等任意能读取/编辑 ADIF 文件的软件打开日志文件。如果用的是 ADIF Master，找到 <strong>MY_SIG_INFO</strong> 字段，然后选中该列所有单元格，点击右键，然后选择 Replace in Selection。在查找框里它应该会将公园号码显示出来，然后你在替换框里可以输入第二个第三个公园号码，应用更新后点击 FILE 下的 Save As，再以新的公园号码将文件重命名后存好（假设你已经将原文件以合适的名字存好了）。</p>
+                <p>如果用每台 Windows 自带的记事本程序，则用其打开文件，找到编辑菜单里的替换，查找框中填入原来的公园号码，替换框中输入其他公园号码，然后应用替换。关闭对话框后，找到文件菜单下的另存，填入合适的文件名存好。苹果系统用户的步骤也是类似的。</p>
+                <p>注意：确保公园ID的位置标识和数字编号之间含有短横杠（-）。</p>
+                <p>如果你忘加了，例如写成 <strong>K1234</strong>那么文件会被拒。无论对于常规的公园激活还是 P2P，都是这样。</p>
                 <h1 id="do-i-need-to-make-separate-files-if-i-use-different-modes"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#do-i-need-to-make-separate-files-if-i-use-different-modes"
+                        href="#do-i-need-to-make-separate-files-if-i-use-different-modes"
                         class="anchor-heading"
                         aria-labelledby="do-i-need-to-make-separate-files-if-i-use-different-modes"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> Do I need to make separate files if I use different modes? </h1>
-                <p>Absolutely not. Whether you operated with all SSB or a mix of SSB, CW, AM, FT4/8, Satellite and PSK31
-                    (or Any mode you like) you only make One file for a given park. If you mix modes during an
-                    activation and use WSJT-X, just import those entries into your adi file before uploading.</p>
-                <p>As long as you enter the data accordingly for each mode, our system will sort it out during
-                    processing – we’re That good!</p>
+                        </svg></a>使用不同模式时需要不同的文件么？</h1>
+                <p>完全不用。无论是你只操作 SSB，还是 SSB/CW/AM/FT4/FT8/卫星/PSK31混着来，每个公园你都只需要一个单一的日志文件。如果你在使用 WSJT-X 时还用了其他模式，记得在上传之前将其合并到同一个 adi 文件下。</p>
+                <p>只要你每个模式都正确进行了记录，我们的系统会自动进行处理——我们就是这么贴心！</p>
                 <h1 id="whats-with-the-file-naming-rules--why-cant-i-name-it-my-way"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#whats-with-the-file-naming-rules--why-cant-i-name-it-my-way"
+                        href="#whats-with-the-file-naming-rules--why-cant-i-name-it-my-way"
                         class="anchor-heading"
                         aria-labelledby="whats-with-the-file-naming-rules--why-cant-i-name-it-my-way"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> What’s with the file naming rules – why can’t I name it My Way? </h1>
-                <p>Before we launched the Self-Uploader feature we had just 10 area coordinators processing All logs;
-                    not just from US operators but from around the globe.</p>
-                <p>During that time having a standardized file naming system made tracking logs for any future repairs
-                    easier. I personally saved every log I ever processed and if an activator said they did not get what
-                    they expected once the log was in, I could easily find what they’d sent and look for any problems.
+                        </svg></a>文件命名规则以及为什么我不能随意命名？</h1>
+                <p>在我们系统出现日志自助上传功能之前，我们的10个地区日志协调员在处理全球的日志条目——不单单是美国的！</p>
+                <p>在那个过程中，我们发现一套合适的文件命名系统会让日志追溯、日志修复等工作变得简单。我个人会将我处理过的每一个日志存档，如果哪天有激活人说他们发现了些问题，那么我可以很快地找到这些文件。
                 </p>
                 <h1 id="naming-your-files"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#naming-your-files"
+                        href="#naming-your-files"
                         class="anchor-heading" aria-labelledby="naming-your-files"><svg viewBox="0 0 16 16"
                             aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> Naming your files </h1>
-                <p>Now, to the naming issue: In preparing for self-uploading a standard had to be agreed upon for the
-                    developers to work with thus, a standard filename format was mandated to get everyone ready for when
-                    self-uploading was released.</p>
-                <p>The standard is as such –</p>
+                        </svg></a>命名你的文件</h1>
+                <p>现在来说说命名问题：想要自助上传功能得以实现，一套标准的命名系统必须在所有开发者之间达成共识。</p>
+                <p>这个标准是：</p>
                 <div class="language-plaintext highlighter-rouge">
                     <div class="highlight">
                         <pre class="highlight"><code>callsign@park#-yyyymmdd
 </code></pre>
                     </div>
                 </div>
-                <p>An example using one of my own activations would look like this:</p>
+                <p>我用自己的激活做个例子：</p>
                 <div class="language-plaintext highlighter-rouge">
                     <div class="highlight">
                         <pre class="highlight"><code>KB2FMH@K-8088-20220202.adi
 </code></pre>
                     </div>
                 </div>
-                <p>which was an activation at park K-8088 on February 2nd , 2022. Maintaining a uniform naming system
-                    will help You now.</p>
+                <p>其表示2022年2月2日在 K-8088 公园做的激活。维护一套统一的命名格式会帮上你忙的。</p>
                 <h1 id="what-if-i-made-a-mistake-how-do-i-replace-the-log-file"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#what-if-i-made-a-mistake-how-do-i-replace-the-log-file"
+                        href="#what-if-i-made-a-mistake-how-do-i-replace-the-log-file"
                         class="anchor-heading"
                         aria-labelledby="what-if-i-made-a-mistake-how-do-i-replace-the-log-file"><svg
                             viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> What if I made a mistake, how do I replace the log file? </h1>
-                <p>If you find you need a log replaced due to an error of any kind, you Must ask either the Help Desk
-                    Or, you area coordinator. Users cannot Delete logs – only upload.</p>
-                <p>In the event of a log file error just click the Down Arrow next to the file on your “My Uploaded
-                    Logs” portal and click Request Help. Include the park ID and date of the file you’d like removed and
-                    one of our support staff will reply when it is done, allowing You to upload a new replacement log.
-                </p>
-                <p>If the file presents errors during upload that you cannot figure out, again, click the Request Help
-                    button and we’re on our way to resolve the issue!</p>
-                <p>Lastly, there are may different logging programs out there that put many different fields in a log
-                    file.</p>
-                <p>Fields such as Frequency, Name, Grid / Locator, County etc.. are Not required for our system so do
-                    not waste time worrying about this data.</p>
-                <p>Of course, you can always ask your area coordinator for help if you feel more comfortable.</p>
+                        </svg></a>如果不小心弄错了，我怎么替换那个日志文件？</h1>
+                <p>如果你日志文件有错需要处理，那么你只能联系帮助台或者你地区的协调人。用户无法自己删除日志，只能上传。</p>
+                <p>如有错误需要处理，请在 “My Uploaded Logs” 面板该文件边上找到下拉箭头，在里面点击 “Request Help”。说清楚想要删除的文件的公园ID和日期，然后我们的支持人员在搞定后会回复通知你，这时你就可以上传新的日志来替换了。</p>
+                <p>如果上传过程中发生问题，同样的，可以点击 “Request Help”，我们会来处理这个问题！</p>
+                <p>最后，日志程序非常多，它们产生的各种字段也非常多。</p>
+                <p>诸如频率、名字、网格、定位、国家等等字段在我们系统里是用不到的，所以不用去担心这些字段。</p>
+                <p>如有问题，你可以随时联系你所在区域的协调员。</p>
                 <h1 id="summary"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#summary"
+                        href="#summary"
                         class="anchor-heading" aria-labelledby="summary"><svg viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> Summary </h1>
-                <p>If you have Any questions that are Not answered in this document or the documents at docs.pota.app
-                    ask our Help Desk or your call area coordinator Before doing anything – we’re here to help.</p>
-                <p>Please, do not rely on hearsay from others or the so-called Facebook experts. The people who built
-                    the system and use it daily know how it works and what is required, that’s why they are doing it.
-                </p>
-                <p>Now get out and activate!</p>
+                        </svg></a>总结</h1>
+                <p>如有本文/本文档尚未阐明的问题，可以随时联系我们的帮助台，也可以联系所在区域的协调员。凡事别慌，我们一直在这里。</p>
+                <p>请勿偏听偏信，特别是一些所谓的专业博主。他们擅长网络营销，别有他图，他们就是专门在社交平台上干这些营生的。</p>
+                <p>好了，现在让我们走出去，激活起来吧！</p>
                 <h1 id="references"> <a
-                        href="https://docs.pota.app/docs/activator_reference/logging_made_easy.html#references"
+                        href="#references"
                         class="anchor-heading" aria-labelledby="references"><svg viewBox="0 0 16 16" aria-hidden="true">
                             <use xlink:href="#svg-link"></use>
-                        </svg></a> References </h1>
+                        </svg></a>参考</h1>
                 <ul>
-                    <li>We recommend / Support the N3FJP ACLog software and have very clear instructions on setting it
-                        up for POTA use. In Fact, the developer, Scott Davis, created a POTA Template at our request.
+                    <li>我们推进并支持 N3FJP ACLog 软件，对此我们有详细的说明。事实上，其开发者 Scott Davis 应我们所邀专门为 POTA 写了一套模版。
                     </li>
-                    <li>A great video by our own Matt Herre, N3NWV, on how to customize your ACLog application can be
-                        viewed here - https://youtu.be/VePKcyP8ppw.</li>
-                    <li>Instructions for ACLog in general can be viewed Here - https://youtu.be/aIaNKCKkstM</li>
-                    <li>To download ACLog, follow this link - https://www.n3fjp.com/aclog.html</li>
-                    <li>Our old Help / Getting Started - FAQs section is now www.docs.pota.app</li>
-                    <li>You can always start your journey at <a
-                            href="https://www.parksontheair.com/">www.parksontheair.com</a> where you can find the
-                        listing of volunteer staff working to keep POTA growing for you.</li>
+                    <li>我们的 Matt Herre（N3NWV）专门录制了一个关于如何定制你的 ACLog 的教程，可以在这里观看： https://youtu.be/VePKcyP8ppw.</li>
+                    <li>ACLog 的一般性使用说明可以在这里观看：  https://youtu.be/aIaNKCKkstM</li>
+                    <li>这里有 ACLog 的下载链接： https://www.n3fjp.com/aclog.html</li>
+                    <li>我们原有的帮助/开始使用指南 —— 常见问题段落，现在迁移到 www.docs.pota.app 里了。</li>
+                    <li>欢迎你开始 <a
+                            href="https://www.parksontheair.com/">www.parksontheair.com</a> 的旅程，这里有众多的志愿者来为大家共同推进 POTA。</li>
                 </ul>
                 <hr>
                 <footer>
